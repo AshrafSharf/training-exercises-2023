@@ -1,0 +1,11 @@
+.card{
+    position:fixed;
+    top:30px;
+    width: 200px;
+    height: 200px;
+    border:1px solid #cccccc;
+}
+h1 {
+    color: hotpink;
+    font-family: cursive;
+}
