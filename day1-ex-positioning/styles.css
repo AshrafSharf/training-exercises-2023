@@ -1,4 +1,127 @@
 h1 {
     color: hotpink;
-    font-family: cursive;
+    text-align: center;
 }
+
+.notification-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.card{
+    position:relative;
+    top: 5px;
+    width: 300px;
+    height: 300px;
+    border:1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top:30px;
+    left:30px;
+  }
+   .head:first-child {
+    left: 22%;
+  }
+   
+  .head:last-child {
+    left: 65%;
+  }
+
+  .circle-face {
+    width: 200px;
+    height: 200px;
+    background-color: #ec7699;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .eye{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .eye:first-child {
+    right: 30%;
+  }
+  
+  .eye:last-child {
+    left: 70%;
+  }
+
+  .nose {
+    width: 25px;
+    height: 50px;
+    background-color: purple;
+    position: absolute;
+    top: 176%;
+    left: -40%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mouth{
+    width: 90px;
+    height: 25px;
+    background-color: #dc9b1ad4;;
+    position: absolute;
+    border-radius: 10px;
+    top: 300%;
+    left: -38%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-content{
+    color:coral;
+    font-size: 15px; 
+    font-family: cursive; 
+  }   
+
+  .footer-container {
+    position: relative;
+    /* /* height: 100vh; */
+    overflow: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .fixed-button {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    background-color: rgba(255, 174, 0, 0.861);
+    border: 1px solid #ccc;
+    border-radius:20px;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  
+  
+  
