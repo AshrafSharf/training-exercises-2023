@@ -1,0 +1,121 @@
+/*h1 {*/
+/*    color: darkblue;*/
+/*    font-family: cursive;*/
+/*}*/
+.parent-teddy {
+    margin: 30px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: hotpink;
+}
+.left-black {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -9px;
+    border-radius: 50%;
+    background-color: black;
+}
+.right-black {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    right: -1px;
+    top: -9px;
+}
+.left-white {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    top: 20%;
+    left: 20%
+}
+.right-white {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 20%;
+    top: 20%;
+    background-color: white;
+
+}
+.rectangle {
+    position: absolute;
+    background-color: purple;
+    width: 35px;
+    height: 65px;
+    left: 43%;
+    top: 45%
+}
+.oval {
+    position: absolute;
+    background-color: orange;
+    height: 30px;
+    width: 50%;
+    border-radius: 30px;
+    left: 25%;
+    bottom: 10%;
+
+}
+.notification-icon {
+    display: flex;
+    float: right;
+    justify-content: end;
+    margin-right: 5px;
+
+}
+.icon-button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: orange;
+    background: #e1dede;
+    border: none;
+    border-radius: 50%;
+}
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    background: coral;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.chat-section {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    height: 45px;
+    width: 65px;
+    border-radius: 35px;
+    background-color: #73ad21;
+    color: white;
+}
+.chat-text {
+    position: absolute;
+    padding-top: 5px;
+    font-style: italic
+}
+.paragraph{
+    margin-top: 50px;
+}
+
+
+
