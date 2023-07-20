@@ -1,6 +1,19 @@
 h1 {
-    color: hotpink;
+    color: black;
     text-align: center;
+    margin: 5px
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    height: 50px;
+    flex-shrink: 0;
+    background-color: #037cf5;
 }
 
 .notification-icon {
@@ -10,46 +23,72 @@ h1 {
     right: 20px;
     background-color: black;
     border-radius: 50%;
-    margin-left: 5px;
+    margin: 5px 0 0 6px;
 }
 
-.card{
-    position:relative;
+footer {
+    height: 50px;
+    flex-shrink: 0;
+    background-color: #134c7d;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 174, 0, 0.861);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.card {
+    position: relative;
     top: 5px;
     width: 300px;
     height: 300px;
-    border:1px solid #cccccc;
+    border: 1px solid #cccccc;
     display: flex;
     justify-content: center;
     align-items: center;
+    float: left;
+    margin: 10px;
 }
 
-.head{
+.head {
     width: 40px;
     height: 40px;
     background-color: black;
     border-radius: 50%;
     position: absolute;
-    top:30px;
-    left:30px;
-  }
-   .head:first-child {
-    left: 22%;
-  }
-   
-  .head:last-child {
-    left: 65%;
-  }
+    top: 30px;
+    left: 30px;
+}
 
-  .circle-face {
+.head:first-child {
+    left: 22%;
+}
+
+.head:last-child {
+    left: 65%;
+}
+
+.circle-face {
     width: 200px;
     height: 200px;
     background-color: #ec7699;
     border-radius: 50%;
     position: relative;
-  }
-  
-  .eye{
+}
+
+.eye {
     width: 40px;
     height: 40px;
     background-color: white;
@@ -58,17 +97,17 @@ h1 {
     top: 30%;
     left: 30%;
     transform: translate(-50%, -50%);
-  }
+}
 
-  .eye:first-child {
+.eye:first-child {
     right: 30%;
-  }
-  
-  .eye:last-child {
-    left: 70%;
-  }
+}
 
-  .nose {
+.eye:last-child {
+    left: 70%;
+}
+
+.nose {
     width: 25px;
     height: 50px;
     background-color: purple;
@@ -76,46 +115,20 @@ h1 {
     top: 176%;
     left: -40%;
     transform: translate(-50%, -50%);
-  }
+}
 
-  .mouth{
-    width: 90px;
+.mouth {
+    width: 100px;
     height: 25px;
-    background-color: #dc9b1ad4;;
+    background-color: #dc9b1ad4;
     position: absolute;
     border-radius: 10px;
     top: 300%;
     left: -38%;
     transform: translate(-50%, -50%);
-  }
+}
 
-  .text-content{
-    color:coral;
-    font-size: 15px; 
-    font-family: cursive; 
-  }   
-
-  .footer-container {
-    position: relative;
-    height: 100vh;
-    overflow: auto;
-    color: #fff;
-    padding: 30px;
-    text-align: center;
-  }
-
-  .fixed-button {
-    position: fixed;
-    bottom: 20px; 
-    right: 20px;
-    background-color: rgba(255, 174, 0, 0.861);
-    border: 1px solid #ccc;
-    border-radius:20px;
-  }
-
- 
-
-
-  
-  
-  
+.text-content {
+    font-size: 25px;
+    font-family: cursive;
+}
