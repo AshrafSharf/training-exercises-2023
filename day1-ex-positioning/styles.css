@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 h1 {
     color: hotpink;
     font-family: cursive;
@@ -17,6 +21,7 @@ h1 {
     left: 29rem;
     top: 1rem;
 }
+
 .round2 {
     background-color: rgb(4, 9, 13);
     width: 110px;
@@ -26,6 +31,7 @@ h1 {
     right: 72rem;
     top: 1rem;
 }
+
 .round3 {
     background-color: rgb(247, 118, 183);
     width: 22%;
@@ -35,7 +41,7 @@ h1 {
     left: 31rem;
     top: 35px;
 }
-    
+
 .round4 {
     background-color: rgb(240, 244, 243);
     width: 100px;
@@ -45,6 +51,7 @@ h1 {
     left: 36rem;
     top: 6rem;
 }
+
 .round5 {
     background-color: rgb(244, 239, 238);
     width: 100px;
@@ -53,7 +60,7 @@ h1 {
     position: absolute;
     left: 48rem;
     top: 6rem;
-    
+
 }
 
 .nose-block {
@@ -80,5 +87,33 @@ h1 {
 }
 
 .doll-text-box {
-    width: 35%;
+    width: auto;
+    padding: 40px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    background: inherit;
+    position: absolute;
+    top: 58px;
+    left: 13rem;
+}
+
+svg {
+    color: rgb(13, 12, 12);
+    width: 100%;
+    padding: 5px;
+    height: 3rem;
+}
+
+.notify-value {
+    position: absolute;
+    display: block;
+    left: 37px;
+    height: 17px;
+    background: orange;
+    bottom: 23px;
+    border: 50%;
+    border-radius: 50%;
+    padding: 10px;
 }
