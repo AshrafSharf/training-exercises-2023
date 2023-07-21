@@ -2,3 +2,86 @@ h1 {
     color: hotpink;
     font-family: cursive;
 }
+
+.content{
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+}
+.face{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: hotpink;
+    border-radius: 50%;
+}
+
+.ear, .eye {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ear{
+    background-color: black;
+}
+
+.eye{
+    background-color: white;
+}
+
+.nose{
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background-color: aquamarine;
+    left: 125px;
+    top: 120px;
+}
+
+.mouth{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: antiquewhite;
+    left: 100px;
+    bottom: 25px;
+}
+
+.left-eye{
+    left: 70px;
+    top: 70px;
+}
+.right-eye{
+    right: 70px;
+    top: 70px;
+}
+.left-ear{
+    left: 5px;
+    top: 5px;
+}
+.right-ear{
+    right: 5px;
+    top: 5px;
+}
+
+.chatbox{
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.notification{
+    position: relative;
+    display: inline;
+}
+.badge{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
