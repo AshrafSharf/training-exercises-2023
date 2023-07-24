@@ -2,3 +2,200 @@ h1 {
     color: hotpink;
     font-family: cursive;
 }
+body {
+    position: relative;
+}
+
+
+.header {
+    background-color:bisque;
+    height: 40px;
+}
+
+.listed{
+    display: block;
+    float: left;
+    padding: 10px;
+}
+
+.sub-menu{
+    position: relative;
+
+}
+
+.sub-menu-list{
+    display: none;
+}
+
+.sub-menu:hover .sub-menu-list{
+    background-color: cornsilk;
+    position: absolute;
+    list-style-type: none;
+    padding: 7px;
+    display: block;
+    width: 70px;
+    right: -20px;
+}
+
+.sub-menu-list li {
+    padding: 2px;
+}
+
+[class*="col-"]{
+    height: 40px;
+    float: left;
+}
+
+
+    .col-1{
+        width: 8.333%;
+        background: chocolate;
+
+    }
+
+    .col-2{
+        width: 16.666%;
+        background: blue;
+    }
+    .col-3{
+        width: 25%;
+       background: burlywood;
+
+    }
+
+    .col-4{
+        width: 33.33%;
+        background: purple;
+    }
+    .col-5{
+        width: 41.66%;
+        background: aqua;
+    }
+    .col-6{
+        width: 50%;
+         background: hotpink;
+    }
+
+    .col-7{
+        width: 58.33%;
+        background: chartreuse;
+    }
+
+    .col-8{
+        width: 66.66%;
+        background: red;
+    }
+
+    .col-9{
+        width: 75%;
+         background: cadetblue;
+    }
+
+    .col-10{
+        width: 83.33%;
+        background: darkblue;
+    }
+
+    .col-11{
+        width: 91.66%;
+         background: darkgreen;
+    }
+
+    .col-12{
+        width: 100%;
+        background: khaki;
+    }
+
+/*@media only  screen and (min-width: 390px)*/
+/*{*/
+/*    [class*="col-"]{*/
+/*        width: 100%;*/
+
+/*    }*/
+/*}*/
+
+
+@media  screen and (min-width: 390px)
+{
+
+    [class*="col-"]{
+        width: 100%;
+
+    }
+}
+
+@media only  screen and (min-width:900px) {
+
+    .col-1{
+        width: 8.333%;
+        background: chocolate;
+
+    }
+
+    .col-2{
+        width: 16.666%;
+        background: blue;
+    }
+    .col-3{
+        width: 25%;
+        background: burlywood;
+
+    }
+
+    .col-4{
+        width: 33.33%;
+        background: purple;
+    }
+    .col-5{
+        width: 41.66%;
+        background: aqua;
+    }
+    .col-6{
+        width: 50%;
+        background: hotpink;
+    }
+
+    .col-7{
+        width: 58.33%;
+        background: chartreuse;
+    }
+
+    .col-8{
+        width: 66.66%;
+        background: red;
+    }
+
+    .col-9{
+        width: 75%;
+        background: cadetblue;
+    }
+
+    .col-10{
+        width: 83.33%;
+        background: darkblue;
+    }
+
+    .col-11{
+        width: 91.66%;
+        background: darkgreen;
+    }
+
+    .col-12{
+        width: 100%;
+        background: khaki;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
