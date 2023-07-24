@@ -1,4 +1,126 @@
 h1 {
     color: hotpink;
     font-family: cursive;
+    text-align: center;
 }
+li{
+    display: inline;
+}
+.menu{
+    background-color: grey;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    color: black;
+    padding: 15px 30px;
+    height: 10px;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color:lightgrey;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu {
+    text-align: center;
+    display: none;
+    position: absolute;
+    bottom: -215px;
+    background-color: gray;
+}
+.dropdown-menu a {
+    color: black;
+    width: 100px;
+    padding: 20px 13px;
+    text-decoration: none;
+    display: block;
+
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu a:hover {
+    background-color: lightgrey;
+}
+.gridsystem{
+    height: 1000px;
+    background-color:whitesmoke;
+}
+.row h2{
+    clear: both;
+}
+/*Grid System*/
+
+[class*="col-"]{
+    height: 50px;
+}
+
+@media only screen and (min-width: 600px){
+    .col-xs-1 {width: 100%;background-color: darkblue;
+        float: left}
+    .col-xs-2 {width: 100%;background-color: blue;
+        float: left}
+    .col-xs-3 {width: 100%;background-color: dodgerblue;
+        float: left}
+    .col-xs-4 {width: 100%;background-color: cornflowerblue;
+        float: left}
+    .col-xs-5 {width: 100%;background-color: deepskyblue;
+        float: left}
+    .col-xs-6 {width: 100%;background-color: lightskyblue;
+        float: left}
+    .col-xs-7 {width: 100%;background-color: lightblue;
+        float: left}
+    .col-xs-8 {width: 100%;background-color: skyblue;
+        float: left}
+    .col-xs-9 {width: 100%;background-color: powderblue;
+        float: left}
+    .col-xs-10 {width: 100%;background-color: lightseagreen;
+        float: left}
+    .col-xs-11 {width: 100%;background-color: lavender;
+        float: left}
+    .col-xs-12 {width: 100%;background-color: lavenderblush;
+        float: left}
+
+}
+
+@media only screen and (min-width:1024px) {
+    /* For tablets: */
+    [class*="col-s-"]{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    /* For desktop res:1440 */
+    .col-1 {width: 8.33%;background-color: darkblue;
+        float: left}
+    .col-2 {width: 16.66%;background-color: blue;
+        float: left}
+    .col-3 {width: 25%;background-color: dodgerblue;
+        float: left}
+    .col-4 {width: 33.33%;background-color: cornflowerblue;
+        float: left}
+    .col-5 {width: 41.66%;background-color: deepskyblue;
+        float: left}
+    .col-6 {width: 50%;background-color: lightskyblue;
+        float: left}
+    .col-7 {width: 58.33%;background-color: lightblue;
+        float: left}
+    .col-8 {width: 66.66%;background-color: skyblue;
+        float: left}
+    .col-9 {width: 75%;background-color: powderblue;
+        float: left}
+    .col-10 {width: 83.33%;background-color: lightseagreen;
+        float: left}
+    .col-11 {width: 91.66%;background-color: lavender;
+        float: left}
+    .col-12 {width: 100%;background-color: lavenderblush;
+        float: left}
+}
+
+
+
