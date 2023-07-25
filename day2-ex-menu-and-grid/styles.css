@@ -2,3 +2,99 @@ h1 {
     color: hotpink;
     font-family: cursive;
 }
+.parent-dropdown-div {
+    display: flex;
+    height: 200px;
+}
+.dropdown-menu:hover .dropdown-btn {
+    background-color: #71beea;
+}
+.dropdown-btn {
+    color: black;
+    padding: 16px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border:1px solid darkslategrey;
+    border-radius: 10px;
+}
+.dropdown-content a {
+    color: rgba(98, 78, 17, 0.88);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    width:125px;
+    height:30px;
+    border-radius: 10px;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+#menu li
+{
+    position:relative;
+    list-style-type:none;
+    float: left;
+    width: 125px;
+    height: 25px;
+}
+#menu li .sub-menu {
+    background:transparent;
+    color: aqua;
+    display:none;
+    padding:1px;
+    position:absolute;
+    width:110px;
+    height:75px;
+}
+#menu li:hover ul.sub-menu {
+    display:block;
+}
+ul#menu li ul a:hover {
+    background: rgba(227, 216, 199);
+    color: #1d0e52;
+    text-decoration:none;
+    border-radius: 5px;
+}
+
+/*flex division class*/
+.parent-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.flexBox {
+    width:150px;
+    height:200px;
+    background-color: #e4e5b2;
+    border:1px solid black;
+    text-align: center;
+}
+
+@media (max-width: 1000px ) {
+    .parent-div {
+        flex-direction:column;
+    }
+    .flexBox {background-color: #b086b4;
+    }
+}
+@media (max-width: 600px) {
+    .parent-div {
+        flex-direction:row-reverse;
+    }
+    .flexBox {
+        background-color: cyan;
+    }
+}
+
