@@ -75,13 +75,12 @@ ul#menu li ul a:hover {
 .parent-div{
     margin-top: 10%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     align-content: center;
 }
 .flexBox {
-    width:150px;
-    height:200px;
+    width:50%;
     background-color: #e4e5b2;
     border:1px solid black;
     text-align: center;
@@ -89,14 +88,15 @@ ul#menu li ul a:hover {
 
 @media (max-width: 1000px ) {
     .parent-div {
-        flex-direction:column;
+        flex-direction:row;
     }
     .flexBox {background-color: #b086b4;
     }
 }
 @media (max-width: 600px) {
     .parent-div {
-        flex-direction:row-reverse;
+        width:30%;
+        flex-direction:column-reverse;
     }
     .flexBox {
         background-color: cyan;
