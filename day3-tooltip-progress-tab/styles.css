@@ -1,4 +1,150 @@
 h1 {
+    text-align: center;
     color: hotpink;
     font-family: cursive;
 }
+/*tab*/
+.tab{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: lavenderblush;
+    border: solid violet;
+}
+.tabmenu a{
+    padding: 15px;
+    text-decoration: none;
+}
+.tabmenu a:hover {
+    background-color: lavender;
+}
+.tab1{
+    position: relative;
+
+}
+.tab1content{
+    position: absolute;
+    background-color: lavender;
+    top:55px;
+    width:1170px;
+    height: 500px;
+    /*padding: 30px;*/
+    display: none;
+}
+.tab1:hover .tab1content{
+    display: block;
+}
+img{
+    margin:20px ;
+}
+/*Tooltip*/
+.btndiv{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.mybtn{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    top:100px;
+}
+.mybtn .left::after{
+    content: "";
+    position: absolute;
+    top:8px;
+    right: -13px;
+    border-width: 6px;
+    border-style:solid;
+    border-color: transparent transparent transparent black;
+}
+.left{
+    position: absolute;
+    right: 105px;
+    top:10px;
+}
+.mybtn .right::after{
+    content: "";
+    position: absolute;
+    top:8px;
+    right: 101px;
+    border-width: 6px;
+    border-style:solid;
+    border-color: transparent black transparent transparent;
+}
+.right{
+    position: absolute;
+    left: 105px;
+    top:10px;
+
+}
+.mybtn .top::after{
+    content: "";
+    position: absolute;
+    top:30px;
+    right: 45px;
+    border-width: 6px;
+    border-style:solid;
+    border-color: black transparent transparent transparent;
+}
+.top{
+    position: absolute;
+    top: -40px;
+    right:-5px;
+}
+.mybtn .bottom::after{
+    content: "";
+    position: absolute;
+    top:-13px;
+    right: 45px;
+    border-width: 6px;
+    border-style:solid;
+    border-color: transparent transparent black transparent;
+}
+.bottom{
+    position: absolute;
+    top: 55px;
+    right:-5px;
+}
+.mytooltip{
+    display: none;
+    text-align: center;
+    background-color: lavender;
+    border:solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
+.mybtn:hover .mytooltip{
+    display: inline-block;
+}
+
+/*progress*/
+.progressbar{
+    height: 30px;
+    background-color: ghostwhite;
+    border: solid black;
+    border-radius: 50px;
+}
+.progress{
+    text-align: center;
+    height: 30px;
+    width: 50%;
+    border-radius: 50px;
+    background-color:deepskyblue;
+}
+.progress-25{
+    width: 25%;
+}
+.progress-50{
+    width: 50%;
+}
+.progress-75{
+    width: 75%;
+}
+.progress-100{
+    width: 100%;
+}
+
+
