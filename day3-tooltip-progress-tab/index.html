@@ -2,11 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Day2 Ex Menu and Grid</title>
+    <title>Day3 Ex Tooltip, Progress Bar and Tab UI</title>
     <link rel="stylesheet" href="./styles.css" />
     <script type="module" src="./app.js"></script>
 </head>
 <body>
-<h1> Day3 Ex Tooltip, Progress Bar and Tab UI </h1>
+    <h1> Day3 Ex Tooltip, Progress Bar and Tab UI </h1>
+    <!--Tab-Menu-->
+    <div class="tab-bar">
+        <ul class="tab-wrapper">
+            <li class="tab-menu">
+                Active
+                <div class="sub-tab-menu">
+                    <h1>Menu 1</h1>
+                    <p style="text-align: center; width: 300px; padding: 5px;">Angular Full Course - Complete Zero to
+                        Hero Angular full Tutorial
+                        Today in this video, we gonna learn about Angular A to z from scratch, so this is an Angular
+                        Full course where you can learn Angular Javascript framework top to bottom. …</p>
+                </div>
+            </li>
+            <li class="tab-menu">
+                Home
+                <div class="sub-tab-menu">
+                    <h1>Menu 2</h1>
+                    <p style="text-align: center; width: 300px; padding: 5px;">Angular Full Course - Complete Zero to
+                        Hero Angular full Tutorial
+                        Today in this video, we gonna learn about Angular A to z from scratch, so this is an Angular
+                        Full course where you can learn Angular Javascript framework top to bottom. …</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--Progress Bar-->
+    <div class="progress-outline">
+        <div class="progress-inline" style="width:25%">25%</div>
+    </div>
+    <div class="progress-outline">
+        <div class="progress-inline" style="width:50%">50%</div>
+    </div>
+    <div class="progress-outline">
+        <div class="progress-inline" style="width:75%">75%</div>
+    </div>
+    
+    <!--ToolTip-->
+    <div class="tip" style="display: flex; ">
+        <div class="tooltip">Top
+            <span class="top">Top</span>
+        </div>
+        <div class="tooltip">Bottom
+            <div class="bottom">Bottom</div>
+        </div>
+        <div class="tooltip">Left
+            <div class="left">Left</div>
+        </div>
+        <div class="tooltip">Right
+            <div class="right">Right</div>
+        </div>
+    </div>
 </body>
 </html>
