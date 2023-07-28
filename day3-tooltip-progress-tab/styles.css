@@ -2,3 +2,195 @@ h1 {
     color: hotpink;
     font-family: cursive;
 }
+.tab {
+    position: relative;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    width:60%;
+    align-items: center;
+    border-radius: 3px 3px 0 0;
+    background-color: #afb4b7;
+    color: #1d0e52;
+    text-decoration: none;
+}
+a {
+    margin-top: 5px;
+}
+.tab  a:hover{
+    color: #333;
+    background-color: #a9e2ea;
+    text-decoration: underline;
+}
+.tab  a  div {
+    position: absolute;
+    width: 200px;
+    padding:10px;
+    margin:5px;
+    border-radius: 3px;
+    display: none;
+    color: rgb(243, 232, 232);
+    background-color: #1d0e52;
+}
+.tab  a:hover div {
+    display: block;
+
+}
+.tooltip-style{
+    text-align: center;
+    margin-top:5%;
+    background-color: #e3d7e5;
+    color: #1d0e52;
+    width:50%;
+    border-radius:10px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .left{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px;
+    position: absolute;
+    top: -5px;
+    right: 110%;
+}
+.tooltip .left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.tooltip:hover .left {
+    visibility: visible;
+}
+.tooltip .right {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px;
+    position: absolute;
+    top: -5px;
+    left: 110%;
+}
+.tooltip .right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+.tooltip:hover .right {
+    visibility: visible;
+}
+
+.tooltip .bottom {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .bottom {
+    visibility: visible;
+}
+
+.tooltip .top {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .top {
+    visibility: visible;
+}
+.progress-bar{
+    width:100%;
+    background-color: #aed8f1;
+    border-radius: 10px;
+    margin-top:50px;
+}
+.progress-bar1 {
+    height:25px;
+    background-color: #bc2974;
+    text-align: center;
+    margin-top:20px;
+    color: #ffffff;
+    border-radius:10px;
+    width:25%;
+}
+.progress-bar2 {
+    height: 25px;
+    background-color: #bc2974;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.progress-bar3 {
+    height:25px;
+    background-color: #bc2974;
+    text-align: center;
+    margin-top:20px;
+    color: #ffffff;
+    border-radius:10px;
+    width:75%;
+}
+
+
+
+

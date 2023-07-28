@@ -1,6 +1,6 @@
 {
   "name": "training-exercises-2023",
-  "source": "day3-tooltip-progress-tab /index.html",
+  "source": "day3-tooltip-progress-tab/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"

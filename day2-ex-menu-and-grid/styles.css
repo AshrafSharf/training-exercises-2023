@@ -67,5 +67,6 @@ h1 {
 @media (max-width: 992px){
     .grid-row .grid-col{
         width: 100%;
+        background-color: aquamarine;
     }
 }
