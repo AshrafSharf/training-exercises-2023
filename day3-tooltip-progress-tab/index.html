@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Day2 Ex Menu and Grid</title>
+    <title>Day3, Progress Bar and Tab UI</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script type="module" src="./app.js"></script>
 </head>
+
 <body>
-<h1> Day3 Ex Tooltip, Progress Bar and Tab UI </h1>
+    <h1> Day3 Progress Bar and Tab UI </h1>
+    <!--Tab-Menu-->
+    <div class="tab">
+        <ul class="tab-wrapper">
+            <li class="tab-menu">
+                Active
+                <div class="sub-menu">
+                    <h1>Menu 1</h1>
+                    <p style="text-align: center; width: 300px; padding: 5px;">CSS stands for Cascading Style Sheets<br>
+                        CSS describes how HTML elements are to be displayed on screen, paper, or in other media<br>
+                        CSS saves a lot of work. It can control the layout of multiple web pages all at once<br>
+                        External stylesheets are stored in CSS files</p>
+                </div>
+            </li>
+            <li class="tab-menu">
+                Home
+                <div class="sub-menu">
+                    <h1>Menu 2</h1>
+                    <p style="text-align: center; width: 300px; padding: 5px;">CSS stands for Cascading Style Sheets
+                        CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                        CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                        External stylesheets are stored in CSS files</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--Progress Bar-->
+    <div class="progress-outline">
+        <div class="progress-inline" style="width:25%">25%</div>
+    </div>
+    <div class="progress-outline">
+        <div class="progress-inline" style="width:50%">50%</div>
+    </div>
+    <div class="progress-outline">
+        <div class="progress-inline" style="width:75%">75%</div>
+    </div>
+
+    <!--ToolTip-->
+    <div class="tip" style="display: flex; ">
+        <div class="tooltip">Hover
+            <span class="top">Hover</span>
+        </div>
+        <div class="tooltip">Top
+            <span class="top">Top</span>
+        </div>
+        <div class="tooltip">Bottom
+            <div class="bottom">Bottom</div>
+        </div>
+        <div class="tooltip">Left
+            <div class="left">Left</div>
+        </div>
+        <div class="tooltip">Right
+            <div class="right">Right</div>
+        </div>
+    </div>
 </body>
+
 </html>

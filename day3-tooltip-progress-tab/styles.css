@@ -1,4 +1,157 @@
+body {
+    margin: 0;
+}
+
 h1 {
-    color: hotpink;
+    color: rgb(139, 133, 242);
     font-family: cursive;
+}
+
+.tab {
+    background-color: #aee6ad;
+}
+
+.tab ul.tab-wrapper {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.tab ul.tab-wrapper li.tab-menu {
+    display: inline-block;
+    padding: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab div.sub-menu {
+    background-color: lightskyblue;
+    padding: 0;
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 42px;
+    min-width: 50px;
+    left: 0;
+}
+
+.tab li.tab-menu:hover div.sub-menu {
+    display: block;
+}
+
+.tab div.sub-tab-menu li {
+    display: block;
+    padding: 10px;
+}
+
+.tab ul.tab-wrapper li:hover {
+    background-color: rgb(237, 235, 204);
+    text-decoration: underline;
+}
+
+.progress-outline {
+    background-color: #E9ECEF;
+    margin: 50px;
+    text-align: center;
+}
+
+.progress-inline {
+    height: 22px;
+    background-color: #ff9100;
+}
+
+.tooltip {
+    position: relative;
+    text-align: center;
+    background-color: grey;
+    height: 20px;
+    width: 100px;
+    margin: 50px;
+}
+
+.tooltip .top,
+.bottom,
+.left,
+.right {
+    display: none;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .top,
+.tooltip:hover .bottom,
+.tooltip:hover .left,
+.tooltip:hover .right {
+    display: block;
+    display: absolute;
+    cursor: pointer;
+}
+
+.tooltip:hover .top {
+    bottom: 150%;
+}
+
+.tooltip:hover .bottom {
+    top: 150%;
+}
+
+.tooltip:hover .left {
+    top: 0px;
+    left: -40%;
+}
+
+.tooltip:hover .right {
+    top: 0px;
+    left: 160%;
+}
+
+.tooltip .top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black black transparent black;
+}
+
+.tooltip .bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black black black;
+}
+
+.tooltip .left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent black black;
+}
+
+.tooltip .right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black black black transparent;
 }
